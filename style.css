@@ -1,0 +1,19 @@
+button{
+    background-color: blue;
+    margin: 0;
+    width: 50%;
+    height: 100px;
+    color: aliceblue;
+    font-size: 70px;  
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+video{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

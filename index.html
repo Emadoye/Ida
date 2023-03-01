@@ -5,29 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video</title>
-
-    <style>
-        button{
-            background-color: blue;
-            margin: 0;
-            width: 50%;
-            height: 100px;
-            color: aliceblue;
-            font-size: 70px;  
-        }
-
-        button:hover{
-            background-color: aquamarine;
-        }
-        video{
-            width: 70%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
+<link rel="stylesheet" href="style.css" />
 <body>
     <h1 id="heading1"></h1>
     <video id="video1" data-track='{
@@ -42,7 +21,7 @@
     </video>
     <div style="text-align: center;"> 
     <button id="button1"
-    onclick="Changevideo()">
+    onclick="changeVideo()">
         Click me!
     </button>
     </div>
