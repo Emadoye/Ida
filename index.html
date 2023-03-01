@@ -29,23 +29,42 @@
     </style>
 </head>
 <body>
-    <video id="video1">
+    <video id="video1" data-track='{
+        "param1" : "val1",
+        "param2" : {
+        "sub1": "test321",
+        "sub2": "test31"
+        }
+        }
+        '>
         <source src="mov_bbb.mp4" type="video/mp4">
     </video>
     <div style="text-align: center;"> 
-    <button
+    <button id="button1"
     onclick="Changevideo()">
         Click me!
     </button>
     </div>
     <script>
+        window.setInterval(Isplaying,5000)
         var Myvideo = document.getElementById("video1")
+        var Mybutton = document.getElementById("button1")
         function Changevideo() {
             if (Myvideo.paused) {
                 Myvideo.play()
+                Mybutton.innerHTML = "Video is playing"
             }
             else{
                 Myvideo.pause()
+                Mybutton.innerHTML = "Video is paused"
+            }
+        }
+        function Isplaying() {
+            if (Myvideo.paused) {
+                return false
+            }
+            else {
+                return true
             }
         }
     </script>
